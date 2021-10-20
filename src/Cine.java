@@ -1,19 +1,16 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Cine {
     public static void main(String[] args) {
-//        Salas sala01 = new Salas(40, "salaA");
-//        Espectador nidea = new Espectador("juan ",23," b",22);
-//        Espectador nideaa = new Espectador("fede ",23," b",24);
-//        Espectador nideax = new Espectador("fede ",23," b",24);
-//        sala01.setEspectadores(nidea);
-//        sala01.setEspectadores(nideaa);
-//        sala01.setEspectadores(nideax);
-//        System.out.println("la sala 01 contiana a : ");
-//        sala01.getEspectadores();
-//        Salas sala02 = new Salas(40, "salaB");
-//        sala02.getEspectadores();
-//        Empleado 01 = new Empleado('jorge',30);
+
+
+        //Se debe poder listar los espectadores de una sala, pero en caso de que no haya
+        // sido asignada se debe capturar el error emitiendo el mensaje
+        // "SIN ESPECTADORES CARGADOS".
+        System.out.println("prueba de cargar una sala sin expectadores");
+        Salas sala02 = new Salas(40, "salaB");
+        sala02.getEspectadores();
 
         //Cargar espectadores pidiendo los nombre, edad, fila y silla al usuario por medio de la consola.
         // En caso de que el usuario ingrese letras en lugar de números donde no corresponda el
@@ -35,7 +32,12 @@ public class Cine {
             nombre = sc.next();
 
             System.out.println("Ingrese la edad");
-            edad = sc.nextByte();
+            try {
+                edad = sc.nextByte();
+            }catch (Exception e){
+                System.out.println("ERROR EN EL INGRESO DE DATOS");
+                cont--;
+            }
 
             System.out.println("Ingrese la Fila");
             fila = sc.next();
