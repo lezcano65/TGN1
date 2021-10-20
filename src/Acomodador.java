@@ -18,6 +18,7 @@ public class Acomodador extends Empleado implements ParaAcomodadores{
 
     @Override
     public void setSala(Salas sala) {
+        this.sala=sala;
     }
 
 }
