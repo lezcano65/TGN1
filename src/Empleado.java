@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 import java.util.Objects;
 
 public class Empleado extends Persona{

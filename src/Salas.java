@@ -41,10 +41,7 @@ public class Salas {
     public Object getEspectadores() {
         // Se debe poder listar los espectadores de una sala, pero en caso de que no
         // haya sido asignada se debe capturar el error emitiendo el mensaje "SIN ESPECTADORES CARGADOS".
-//        Scanner scan = new Scanner(System.in);
-//        String sala;
-//        System.out.printf(" ingrese el la sala a listar");
-//        sala = scan.next();
+
 
         if (coleccionEspectadores.size()!= 0){
             System.out.println("la "+ nombre +" contiene ");
@@ -52,19 +49,6 @@ public class Salas {
         }else{
             System.out.println("la "+ nombre +" SIN ESPECTADORES CARGADOS");
         }
-//        try {
-//            if(coleccionEspectadores.size()!=0) {
-//                System.out.println(coleccionEspectadores.toString());
-//                int i = 1;
-//            }
-//
-//        }catch (IOException e){
-//            System.out.println(" ");
-//        }
-//        if (i == 0){
-//            System.out.println("error");
-//        }
-
         return null;
     }
 
