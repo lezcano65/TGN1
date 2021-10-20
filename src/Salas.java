@@ -1,8 +1,4 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class Salas {
     private Object Espectador = null;
@@ -50,11 +46,24 @@ public class Salas {
 //        System.out.printf(" ingrese el la sala a listar");
 //        sala = scan.next();
 
-        if (coleccionEspectadores.size()!=0){
+        if (coleccionEspectadores.size()!= 0){
+            System.out.println("la "+ nombre +" contiene ");
             System.out.println(coleccionEspectadores.toString());
         }else{
-            System.out.println("SIN ESPECTADORES CARGADOS");
+            System.out.println("la "+ nombre +" SIN ESPECTADORES CARGADOS");
         }
+//        try {
+//            if(coleccionEspectadores.size()!=0) {
+//                System.out.println(coleccionEspectadores.toString());
+//                int i = 1;
+//            }
+//
+//        }catch (IOException e){
+//            System.out.println(" ");
+//        }
+//        if (i == 0){
+//            System.out.println("error");
+//        }
 
         return null;
     }
@@ -74,6 +83,5 @@ public class Salas {
                 '}';
     }
 
-    public void setEspectadores() {
-    }
+
 }
