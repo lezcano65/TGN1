@@ -104,7 +104,7 @@ public class Cine {
         //Crear un Empleado.
         Empleado empleado01 = new Empleado("Jorge Medina",50,0);
         //Mostrar los datos del Empleado.
-        empleado01.toString();
+        System.out.println(empleado01.toString());
 
 
     };
