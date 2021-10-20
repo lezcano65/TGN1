@@ -21,10 +21,7 @@ public abstract class Persona {
 
     public abstract String toString();
 
-    ;
-
 
     public abstract String getTipo();
 
-    ;
 }

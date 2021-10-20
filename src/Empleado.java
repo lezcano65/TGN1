@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Empleado extends Persona{
     private double sueldo;
 
@@ -14,10 +16,19 @@ public class Empleado extends Persona{
     }
     @Override
     public String toString(){
-        return "Espectador{" +
-                ", nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                '}';
+        if (Objects.equals(Empleado.this.getTipo(), "Empleado")) {
+            return "Empleado{" +
+                    "nombre='" + nombre + '\'' +
+                    ", edad=" + edad +
+                    ", sueldo= " + sueldo +
+                    '}';
+        }else {
+            return "Acomodador{" +
+                    "nombre='" + nombre + '\'' +
+                    ", edad=" + edad +
+                    ", sueldo= " + sueldo +
+                    '}';
+        }
 
     }
     @Override
