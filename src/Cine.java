@@ -11,7 +11,7 @@ public class Cine {
         sala01.setEspectadores(nideax);
         System.out.println("la sala 01 contiana a : ");
         sala01.getEspectadores();
-        Salas sala02 = new Salas(40, "salaA");
+        Salas sala02 = new Salas(40, "salaB");
         sala02.getEspectadores();
 
     };
