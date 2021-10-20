@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Cine {
+    public static void main(String[] args) {
+        Salas sala01 = new Salas(40, "salaA");
+        Espectador nidea = new Espectador("juan ",23," b",22);
+        Espectador nideaa = new Espectador("fede ",23," b",24);
+        sala01.setEspectadores(nidea);
+        System.out.println("la sala 01 contiana a : ");
+        sala01.getEspectadores();
+        
+
+    };
+}
