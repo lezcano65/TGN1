@@ -4,7 +4,9 @@ import java.util.Objects;
 public class Empleado extends Persona{
     private double sueldo;
 
-    public Empleado (String nombre, int edad){
+    public Empleado (String nombre, int edad,double sueldo){
+        super(nombre,edad);
+        this.sueldo=sueldo;
 
     }
 

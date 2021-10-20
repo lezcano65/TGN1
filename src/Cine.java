@@ -94,20 +94,18 @@ public class Cine {
         System.out.println("los espectadores que se encuentran en la sala son: ");
         sala01.getEspectadores();
         //Crear un acomodador por medio del código.
-        Acomodador acomodador01 = new Acomodador("Juan Perez",50);
+        Acomodador acomodador01 = new Acomodador("Juan Perez",50,0,sala01);
         //Asignar a dicho Acomodador la sala creada anteriormente.
         acomodador01.setSala(sala01);
         //Asignar un sueldo de $50.000 al Acomodador.
         acomodador01.setSueldo(50.000);
         //Mostrar los datos del Acomodador en la consola.
         System.out.println("El acomodador de la Sala 01 es:");
-        acomodador01.toString();
+        System.out.println(acomodador01.toString());
         //Crear un Empleado.
-        Empleado empleado01 = new Empleado("Jorge Medina",50);
+        Empleado empleado01 = new Empleado("Jorge Medina",50,0);
         //Mostrar los datos del Empleado.
         empleado01.toString();
-
-
 
 
     };

@@ -1,8 +1,18 @@
 public class Acomodador extends Empleado implements ParaAcomodadores{
     private Salas sala;
 
-    public Acomodador(String nombre, int edad){
-        super(nombre, edad);
+    @Override
+    public String toString() {
+        return "Acomodador{" +
+                "sala=" + sala +
+                ", nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                '}';
+    }
+
+    public Acomodador(String nombre, int edad, double sueldo, Salas sala){
+        super(nombre, edad,sueldo);
+        this.sala= sala;
     }
 
 
