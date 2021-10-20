@@ -43,7 +43,12 @@ public class Cine {
             fila = sc.next();
 
             System.out.println("Ingrese la Silla");
-            silla = sc.nextByte();
+            try {
+                silla = sc.nextByte();
+            }catch (Exception e){
+                System.out.println("ERROR EN EL INGRESO DE DATOS");
+                cont--;
+            }
 
             if (cont==1){
                 espectador1.setFila(fila);
