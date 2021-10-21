@@ -1,18 +1,8 @@
-public class Acomodador extends Empleado implements ParaAcomodadores{
-    private Salas sala;
+public class Acomodador extends Empleado implements ParaAcomodador {
+    private Sala sala;
 
-    @Override
-    public String toString() {
-        return "Acomodador{" +
-                "sala=" + sala +
-                ", nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                '}';
-    }
-
-    public Acomodador(String nombre, int edad, double sueldo, Salas sala){
-        super(nombre, edad,sueldo);
-        this.sala= sala;
+    public Acomodador(String nombre, int edad){
+        super(nombre, edad);
     }
 
 
@@ -22,12 +12,12 @@ public class Acomodador extends Empleado implements ParaAcomodadores{
     }
 
     @Override
-    public Salas getSala() {
+    public Sala getSala() {
         return sala;
     }
 
     @Override
-    public void setSala(Salas sala) {
+    public void setSala(Sala sala) {
         this.sala=sala;
     }
 

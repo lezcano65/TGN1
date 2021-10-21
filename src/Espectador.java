@@ -3,9 +3,8 @@ public class Espectador extends Persona {
     private int silla;
 
     public Espectador(String nombre, int edad, String fila, int silla){
-        super(nombre,edad);
-        //this.nombre = nombre;
-        //this.edad = edad;
+        this.nombre = nombre;
+        this.edad = edad;
         this.fila = fila;
         this.silla = silla;
     }

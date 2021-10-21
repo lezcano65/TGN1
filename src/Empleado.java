@@ -1,11 +1,10 @@
+import java.util.LinkedList;
 import java.util.Objects;
 
 public class Empleado extends Persona{
     private double sueldo;
 
-    public Empleado (String nombre, int edad,double sueldo){
-        super(nombre,edad);
-        this.sueldo=sueldo;
+    public Empleado (String nombre, int edad){
 
     }
 
@@ -16,6 +15,7 @@ public class Empleado extends Persona{
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
+
     @Override
     public String toString(){
         if (Objects.equals(Empleado.this.getTipo(), "Empleado")) {
@@ -31,8 +31,8 @@ public class Empleado extends Persona{
                     ", sueldo= " + sueldo +
                     '}';
         }
-
     }
+
     @Override
     public String getTipo(){
         return "Empleado";
